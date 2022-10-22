@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+  <script>
+    $(function () {
+      //$("#datepicker-2").datepicker();
+
+
+
+
+      $('#datepicker-2').datepicker()
+        .on("input change", function (e) {
+          let sdate = e.target.value;
+          //return sdate;
+          //console.log("Date changed: ", e.target.value);
+          document.getElementById("sdate").innerHTML = sdate;
+        });
+
+    });
+  </script>
+
+  <title>Slot Bookings</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      display: grid;
+      grid-template-areas: 'header header'
+        'calendar bookings'
+        'formEnter bookings';
+      grid-template-columns: 2fr 4fr;
+      height: 100vh;
+
+
+
+    }
+
+    header,
+    .calendar,
+    .formEnter,
+    .bookings {
+      background-color: steelblue;
+      color: white;
+      border: skyblue 1px solid;
+      padding: 20px;
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    .calendar {
+      grid-area: calendar;
+      /*height: 300px;*/
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .formEnter {
+      grid-area: formEnter;
+      /* height: 454px;*/
+    }
+
+    .bookings {
+      grid-area: bookings;
+    }
+
+    .bookings h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>Header</header>
+  <div class="calendar">
+    <h3>Select Date</h3>
+    <div id="datepicker-2"></div>
+
+  </div>
+  <div class="formEnter">
+    <h1>Form</h1>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, facere rem incidunt totam delectus ullam neque
+    dolorem? Commodi cupiditate eveniet voluptatum fuga facere exercitationem perspiciatis, nostrum sequi ad delectus,
+    qui deserunt tenetur hic aliquam, ullam consequuntur quas! Numquam modi est, neque, in incidunt, voluptatibus
+    recusandae odit dolor nemo ut exercitationem? Dignissimos voluptate veniam atque unde voluptatem distinctio sed
+    sapiente earum odit? Minus facilis vel reiciendis, ea provident dolore, accusamus deleniti mollitia voluptates
+    aperiam aliquam veniam, numquam sit maiores. Consequatur cupiditate tempore cumque alias. Est minima repudiandae
+    consequatur. Asperiores aliquid mollitia, itaque quisquam id molestiae quas debitis sapiente perspiciatis ipsam!
+    Incidunt totam, consectetur aliquam quos quis mollitia aliquid reprehenderit ipsum repudiandae esse reiciendis illum
+    iusto quia consequatur nobis? Natus fugiat autem provident laboriosam nesciunt cupiditate perferendis, aliquid qui,
+    eum rem explicabo at, nemo unde blanditiis tenetur enim? Qui voluptas nisi vel dignissimos. Dolores animi itaque
+    quas fugit, et culpa ducimus quisquam odit totam ut quis voluptatibus labore! Debitis, eveniet suscipit. Ipsum
+    tempora tempore iure temporibus cum necessitatibus distinctio consectetur, eveniet fugiat aspernatur porro nemo
+    laudantium! Possimus dignissimos libero ducimus nam necessitatibus magnam quae minima aspernatur facere et non rerum
+    sequi, consequatur doloribus nihil provident veniam dolorum error officiis molestias quisquam accusamus.
+  </div>
+  <div class="bookings">
+
+    <div>
+
+      <h2 id="sdate"></h2>
+    </div>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius magnam mollitia provident! Alias facere quo ratione
+    in quasi hic cupiditate voluptatem perferendis soluta, magni a corrupti. Eius debitis qui impedit sit accusamus sed
+    ullam adipisci quod unde quos sapiente modi, in error accusantium veritatis, aperiam ex dignissimos, deserunt iure
+    quaerat ea provident corporis quibusdam tenetur. Voluptate, distinctio vitae! Pariatur molestiae ratione, molestias
+    possimus unde asperiores at inventore tempore soluta, maxime tenetur labore! Recusandae, assumenda id rem saepe
+    nesciunt ipsam facilis culpa expedita. Praesentium ipsum nostrum earum fugiat voluptate pariatur voluptatem dicta
+    distinctio? Expedita autem modi minima perspiciatis aspernatur iure cumque tempore alias porro dicta repudiandae
+    dolor, odio magnam atque a. Autem iure atque nam similique labore, pariatur fugiat porro culpa et ullam! Quo nobis
+    aspernatur quae sequi quam temporibus, quis aut numquam praesentium! Optio, accusamus laboriosam repudiandae dolorum
+    quibusdam alias iure dolore velit illo quidem enim provident harum, beatae odio vero! Dolore nulla culpa similique
+    illo saepe, officiis exercitationem corporis doloribus ullam architecto cupiditate minima deleniti magni laborum
+    recusandae labore facilis cumque aliquid quasi tempore quia? Incidunt optio totam et repellendus architecto vitae
+    maxime nihil saepe magnam! Culpa ab cupiditate rem libero maxime deserunt voluptas vero repellat deleniti adipisci
+    modi, ducimus doloribus debitis maiores praesentium perspiciatis voluptatum delectus pariatur amet recusandae
+    laudantium. Quam eligendi quo minima tempore corporis dolores ullam mollitia, illum iste architecto aliquam
+    asperiores sint? Labore dicta temporibus aliquam in error nulla, nesciunt vitae dolore delectus ex aut saepe quam
+    officiis quo facilis inventore voluptatibus aperiam consequuntur explicabo nisi autem illo nostrum deserunt.
+    Aspernatur placeat voluptatem exercitationem voluptates fugit dolorem eum voluptatum! Reiciendis doloribus porro
+    quis facere sit cupiditate nulla nam. Cupiditate tenetur assumenda reprehenderit quaerat quos, aperiam veniam
+    molestiae ea itaque voluptates ipsum quas sit commodi a error. Voluptates architecto nihil cumque dignissimos
+    maxime! Facilis saepe et minus velit. Quod modi, doloribus qui repellendus dolorem distinctio, provident magnam
+    facilis ipsam suscipit tempore quibusdam, exercitationem quae facere hic aperiam iure officiis. Molestiae blanditiis
+    magni reiciendis ipsa ullam culpa quisquam repellat laboriosam. Adipisci laborum autem numquam, voluptates explicabo
+    doloribus possimus non incidunt error. Tenetur dolore sunt dicta doloremque fugiat laudantium beatae minima magnam
+    autem? Quo dolor, distinctio vero omnis mollitia molestias consequatur perferendis? Nisi maiores dolor ipsum porro
+    corrupti. Veniam exercitationem nulla, consequatur molestias placeat maxime vel, unde facere fuga, corporis mollitia
+    architecto veritatis aliquam temporibus ipsa dolorem optio cumque tempore tempora maiores voluptas repudiandae ad.
+    Totam esse voluptatibus minus ab aliquid. Eligendi ducimus fuga nisi a dolorem vel sapiente molestiae perferendis
+    quas perspiciatis animi autem in, voluptatibus commodi et, corrupti quidem vitae assumenda delectus dolores ipsam
+    nam? Mollitia id quisquam velit odio voluptatum aperiam culpa repellat minima non alias blanditiis, eligendi nulla
+    assumenda commodi saepe error sed cupiditate sapiente? Enim animi hic dicta ab consequatur et illo? Exercitationem
+    quidem dignissimos id officia mollitia quam enim totam accusantium ullam. Dolor sed nulla doloribus nostrum
+    veritatis quibusdam, eum fugit aut laborum! Consequatur eum quidem quod voluptatibus accusamus similique nulla, at
+    iste natus temporibus repellendus fuga, sequi reiciendis repudiandae ex dolorem.
+  </div>
+</body>
+
+</html>

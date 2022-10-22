@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+  --light-grey: #bcbec0;
+  --blue: #27a9d7;
+  --lt-green: #b6d27c;
+  --drk-green:#315c2c;
+  --tan: #bfb2a5;
+  --brown: #5a4434;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--brown);
+}
+
+ul{
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--drk-green);
+  font-weight:bolder;
+  font-size: large;
+}
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
+}
+.navbar {
+  background-color: var(--light-grey);
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+.navbar ul{
+  display: flex;
+}
+.navbar a {
+  padding: 10px;
+  margin: 0 5px;
+}
+.navbar a:hover{
+  border-bottom: var(--drk-green) 2px solid;
+}
+.navbar .flex{
+  justify-content: space-between;
+}
+.logo img{
+  height: 70px;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Main Content */
+.banner {
+  background-image: url('../img/banner_image.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: centre;
+  align-items: center;  
+}
+.headline {
+  font-size: 4em;
+  font-family: Tahoma, sans-serif;
+  font-weight: bolder;
+  color:var(--brown);
+  filter: brightness(1.2);
+  filter: contrast(1);
+  text-align: center;
+  z-index: 10;
+}
+/* Testimonial */
+.box {
+  flex: 1;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+  background-color:var(--tan);
+  color: var(--drk-green);
+  font-size: large;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.box p {
+  font-size: 1.4em; 
+}
+.signature {
+  text-align: end;
+  font-style: italic;
+}
+
+/* interested */
+.interested-image {
+  background-image: url('../img/shop_2.jpg'); 
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: centre;
+  align-items: center;
+}
+
+.interested-container{
+  display: grid;
+  grid-template-columns:repeat(1, 2fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+ 
+  
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 100px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+
+  
+}
+ .location{
+height: 600px;
+margin-top: 60px;
+}
+.contact{
+  height: 600px;
+  margin-top: 60px;
+  
+}.contact h3{
+  color: #5a4434;
+  font-size: xx-large;
+  font-weight:bolder;
+  padding-bottom: 20px;
+}
+.card{
+  background-color: transparent;
+  
+}
+.card-form {
+  position: relative;
+  padding: 5px;
+}
+.form-control {
+  margin: 30px;
+}
+.card-form input[type='text'],
+.card-form input[type = 'email']{
+  border: 0;
+  border-bottom: 1px var(--drk-green) solid;
+  width: 100%;
+  height:40px;
+  background-color:white;
+  filter: opacity(.8);
+  font-size: larger;
+  color:#5a4434;
+  font-weight: bold;
+  padding: 5px;
+  
+}
+
+.location h3{
+  color: #5a4434;
+  font-size: xx-large;
+  font-weight:bolder;
+  padding-bottom: 20px;
+}
+.btn {
+  display: inline-block; 
+  padding: 10px 30px;
+  cursor: pointer; 
+  border: #5a4434 2px solid;
+  border-radius: 5px;
+}
+.btn:hover{
+  transform: scale(.97);
+}
+.form-control label{
+font-weight: bold;
+font-size: 1.2rem;
+}
+/* global settings for placeholder CSS */
+*::-webkit-input-placeholder {
+  color: var(--brown);
+}
+*:-moz-placeholder {
+  /* FF 4-18 */
+  color: var(--brown);
+  opacity: 1;
+}
+*::-moz-placeholder {
+  /* FF 19+ */
+  color: var(--brown);
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  color: var(--brown);
+}
+*::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--brown);
+}
+.footer{
+  background-color: var(--light-grey);
+  height: 90px;
+  color: var(--drk-green);
+  
+}
+.footer .container{
+  justify-content: space-between;
+}
+
+/* Tablets and under */
+@media(max-width: 768px){
+
+}
+
+/* Mobile */
+@media(max-width: 500px){
+.navbar{
+  height: 130px;
+  
+}
+.navbar .flex{
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.headline{
+  font-size: medium;
+}
+.banner{
+  width: 100%;
+}
+}

@@ -1,0 +1,122 @@
+.banner-image {
+  background-image: url('../img/banner_image2.jpg');
+  background-size: cover;
+
+}
+
+
+.aim-image {
+  background-image: url('../img/aim.jpg');
+  background-size: cover;
+  margin-bottom: 20px;
+  opacity: .6;
+
+}
+
+.interested-image {
+  background-image: url('../img/shop_1.jpg');
+  background-size: cover;
+  margin-bottom: 20px;
+  opacity: 1;
+
+
+}
+
+.our-aim h1 {
+  color: black;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.main-text {
+  opacity: 100%;
+
+}
+
+.wrapper {
+  position: relative;
+}
+
+.headline {
+  font-size: 4em;
+  font-family: Tahoma, sans-serif;
+  font-weight: bolder;
+  color: rgb(78, 43, 27);
+  filter: brightness(1.2);
+  filter: contrast(1);
+
+
+}
+
+.navbar img {
+  height: 70px;
+  margin: 5px;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.box p {
+  font-size: 1.4em;
+}
+
+.interested-boxes .container {
+  display: flex;
+}
+
+.interested-boxes {
+  display: flex;
+}
+
+.interested-box {
+  flex: 1;
+  margin: 20px 10px;
+
+}
+
+.interested-box h1 {
+  z-index: 100;
+  color: wheat;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  opacity: .7;
+}
+
+.box {
+  flex: 1;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+  background-color: sienna;
+  color: white;
+  font-size: large;
+
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: sienna;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer p {
+  flex: 1;
+}
+.footer a{
+  text-decoration: none;
+  color: white;
+}
